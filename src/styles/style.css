@@ -1,5 +1,6 @@
 @import url('https://fonts.googlepis.com/css2?family=Lato&Display=swap');
 
+/*Header*/
 :root {
     --bg-color: #939;
     --bg-header: #000;
@@ -54,7 +55,7 @@ ul li a:hover {
     color: chartreuse;
 }
 
-/* Section */
+/* Section 1*/
 
 section {
     display: flex;
@@ -158,6 +159,70 @@ section {
     width: 70%;
 }
 
+/*section 2*/
+
+.section-2 {
+    display: flex;
+    justify-content: center;
+    background-color: var(--txt-color);
+}
+
+.title-section-info {
+    text-align: center;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.title-section-info h2 {
+    font-size: 35px;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+}
+
+.images-section-info {
+    display: flex;
+    margin-top: 60px;
+
+}
+
+.wraper-images {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.images-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.text-section-info {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.text-section-info span {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.text-section-info p {
+    margin-top: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+.images-info img {
+    width: 140px;
+}
+
  @media (max-width: 768px){
     ul{
         display: none;
@@ -180,6 +245,30 @@ section {
         margin: auto;
         margin-top: 8px;
     }
+
+    .images-section-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wraper-images{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-2 {
+        display: flex;
+        justify-content: start;
+    }
+
+    .images-info{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .text-section-info  {
+        text-align: initial;
+    }
  }
 
 @media (max-width:1201px){
@@ -193,3 +282,4 @@ section {
         margin: auto;
     }
 }
+
