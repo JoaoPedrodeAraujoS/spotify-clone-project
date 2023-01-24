@@ -11,6 +11,7 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
+    /*overflow-y: hidden;*/
 }
 
 header {
@@ -165,6 +166,7 @@ section {
     display: flex;
     justify-content: center;
     background-color: var(--txt-color);
+    /*width: 300px;*/
 }
 
 .title-section-info {
@@ -189,7 +191,7 @@ section {
 .wraper-images {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 250px;
 
 }
 
@@ -223,6 +225,152 @@ section {
     width: 140px;
 }
 
+ /*Section-Plan*/
+
+ .section-plan{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f6f6f6;
+ }
+
+ .title-plan{
+    text-align: center;
+    margin-top: 20px;
+ }
+
+ .title-plan h2{
+    font-size: 35px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+ }
+
+ .title-plan p{
+    font-size: 18px;
+    margin-top: 8px;
+ }
+
+ .card-area{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+ }
+
+ .cards{
+    background-color: var(--txt-color);
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 6px 8px #ccc;
+    padding: 10px;
+    margin: 10px;
+ }
+
+ .card-plan-info{
+    padding: 10px;
+ }
+
+ .card-plan-info span{
+    background-color: rgb(13 114 233);
+    padding: 2px;
+    color: var(--txt-color);
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+ }
+
+ .card-plan-info h2{
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+ }
+
+ .card-plan-info p{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    
+ }
+
+ .box-transparent{
+    padding: 5px;
+    font-weight: bold;
+    color: var(--txt-color);
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+ }
+
+ .box-transparent strong{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    color: rgb(13 114 233);
+    font-weight: 800;
+    font-size: 11px;
+    background-color: transparent;
+    border: 1px solid rgb(13 114 233);
+    border-radius: 5px;
+ }
+
+.cards ul{
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.cards hr{
+    color: #180000;
+}
+
+ .cards ul li{
+    margin-top: -3px;
+    margin-left: -25px;
+    text-align: initial;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    color: #180000;
+ }
+
+ .cards ul li::before{
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background-image: url(../assets/verified.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+
+ .btn-card-plan{
+    text-align: center;
+    width: 100%;
+    margin-top: 120px;
+ }
+
+ .btn-card-plan button{
+    padding: 10px;
+    width: 200px;
+    border-radius: 50px;
+    font-size: 14spx;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--txt-color);
+    background-color: var(--bg-header);
+ }
+
+ .text-card-plan p{
+    margin-top: 20px;       
+ }
+
  @media (max-width: 768px){
     ul{
         display: none;
@@ -254,6 +402,7 @@ section {
     .wraper-images{
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .section-2 {
@@ -271,6 +420,8 @@ section {
     }
  }
 
+/*Media Queries*/
+
 @media (max-width:1201px){
     section{
         display: flex;
@@ -280,6 +431,22 @@ section {
     .img-spotify img{
         width: 70%;
         margin: auto;
+    }
+
+    .card-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cards{
+        width: 320px;
+    }
+
+    .section-plan{
+        display: flex;
+        width: 100%;
     }
 }
 
